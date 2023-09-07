@@ -26,10 +26,10 @@ export default function Hero({}: Props) {
         alt="Picture of the author"
       />
       <div className="z-30">
-        <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
+        <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px] md:tracking-[10px] sm:tracking-[8px]">
           Frontend Developer
         </h2>
-        <h1 className="sm:text-1xl lg:text-6xl font-semibold px-10">
+        <h1 className=" sm:text-lg md:text-3xl lg:text-6xl font-semibold px-10">
           <span className="mr-3">{text} </span>
           <Cursor cursorColor="#F7AB0A" />
         </h1>
