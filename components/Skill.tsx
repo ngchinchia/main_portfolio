@@ -21,7 +21,7 @@ export default function Skill({ directionLeft, src, title }: Props) {
       >
         <>
           {title && (
-            <div className="bg-gray-500 md:w-24 md:h-24 text-center uppercase tracking-[1px] absolute border-gray-950 text-white rounded-full opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out z-20 items-center justify-center pt-7">
+            <div className="bg-white md:text-base sm:text-xs object-cover absolute inset-0 md:w-24 md:h-24 text-center uppercase tracking-[1px] border-gray-500 text-gray-500 rounded-full opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out z-20 items-center justify-center pt-7">
               {title}
             </div>
           )}
