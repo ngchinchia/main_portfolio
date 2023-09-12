@@ -30,8 +30,8 @@ export default function Hero({}: Props) {
           FullStack Developer
         </h2>
         <h1 className=" sm:text-lg md:text-3xl lg:text-6xl font-semibold px-10">
-          <span className="mr-3">{text} </span>
-          <Cursor cursorColor="#F7AB0A" />
+          <span className="mr-3 text-[#64CCC5]">{text} </span>
+          <Cursor cursorColor="#64CCC5" />
         </h1>
 
         <div className="pt-5 whitespace-nowrap">

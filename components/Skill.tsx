@@ -10,28 +10,21 @@ type Props = {
 
 export default function Skill({ directionLeft, src, title }: Props) {
   return (
-    <div className="group flex cursor-pointer relative">
-      <motion.div
-        initial={{
-          x: directionLeft ? -200 : 200,
-          opacity: 0,
-        }}
-        transition={{ duration: 1 }}
-        whileInView={{ opacity: 1, x: 0 }}
-      >
-        <>
+    <div className=" group cursor-pointer relative">
+      <div>
+    
           {title && (
-            <div className="bg-white md:text-base sm:text-xs object-cover absolute inset-0 md:w-24 md:h-24 text-center uppercase tracking-[1px] border-gray-500 text-gray-500 rounded-full opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out z-20 items-center justify-center pt-7">
+            <div className="bg-[#64CCC5] md:text-base sm:text-xs object-cover absolute inset-0 md:w-24 md:h-24 text-center uppercase md:tracking-[1px] border-gray-500 text-white rounded-full opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out z-20 items-center justify-center md:pt-7 sm:pt-2">
               {title}
             </div>
           )}
           <Image
             src={src}
             alt=""
-            className="rounded-full border border-gray-500 object-cover md:w-24 md:h-24 filter group-hover:grayscale transition duration-300 ease-in-out"
+            className="rounded-full border border-gray-500 object-cover md:w-24 md:h-24 sm:w-12 sm:h-12 filter group-hover:grayscale transition duration-300 ease-in-out"
           />
-        </>
-      </motion.div>
+       
+      </div>
     </div>
   );
 }
