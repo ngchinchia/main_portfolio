@@ -73,7 +73,7 @@ export default function Contact({}: Inputs) {
           />
           <button
             type="submit"
-            className="bg-[#64CCC5] py-3 px-6 rounded-md text-black font-bold sm:py-2 sm:px-4"
+            className="bg-[#64CCC5] uppercase hover:bg-[#78f9f0] py-3 px-6 rounded-md  font-bold sm:py-2 sm:px-4 text-gray-500 tracking-[4px]"
           >
             Submit
           </button>
