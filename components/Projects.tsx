@@ -34,11 +34,11 @@ export default function Projects({}: Props) {
             key={i}
             className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center px-9 md:p-44 h-screen"
           >
-            <img
+            {/* <img
               src="https://placebear.com/g/200/200"
               alt=""
               className="md:w-24 md:h-24 sm:w-12 sm:h-12"
-            ></img>
+            ></img> */}
             <div className="space-y-10 px-0 md:px-10 max-w-6xl">
               <h4 className="md:text-4xl sm:text-lg font-semibold text-center ">
                 <span className="underline decoration-[#64CCC5]/50">
