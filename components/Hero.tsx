@@ -1,16 +1,40 @@
-import React from "react";
+'use client'
+import React, { useEffect, useState } from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
 import Image from "next/image";
 import profile from "../assets/profile.jpg";
 import Link from "next/link";
+import { PageInfo } from "@/typings";
+import { fetchPageInfo } from "@/utils/fetchPageInfo";
 
 type Props = {};
 
 export default function Hero({}: Props) {
+  const [pageInfo, setPageInfo] = useState<PageInfo>();
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const fetchedPageInfo = await fetchPageInfo();
+      
+        setPageInfo(fetchedPageInfo[0]);
+        
+      } catch (error) {
+        console.error("Error fetching socials:", error);
+      }
+    };
+    fetchData(); // Fetch data when the component mounts
+  }, []);
+
+  useEffect(() => {
+    // This effect runs whenever pageInfo changes
+    console.log(pageInfo);  
+  }, [pageInfo]);
+
   const [text, count] = useTypewriter({
     words: [
-      "Hi, my name is Ng Chin Chia",
+      `Hi, my name is ${pageInfo?.title}`,
       "Guy-who-loves-Black-Coffee.tsx",
       "<ButLovesToCodeMore />",
     ],
