@@ -27,6 +27,7 @@ import reactnativeIcon from "@/assets/react-native.png"
 import apacheIcon from "@/assets/apache.png"
 import postmanIcon from "@/assets/postman.png"
 
+
 export const skillsData = [
     { src: nodemonIcon, title: "node mon" },
     { src: figmaIcon, title: "figma" },
@@ -56,4 +57,5 @@ export const skillsData = [
     { src: reduxIcon, title: "redux toolkit" },
     { src: reactnativeIcon, title: "react native" },
     { src: apacheIcon, title: "apache" },
+    
   ];
