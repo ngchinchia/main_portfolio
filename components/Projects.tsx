@@ -6,13 +6,6 @@ import brewbubble2 from "@/assets/brewbubble2.png";
 import taskmanagement from "@/assets/taskmanagement.png";
 import enrolsys from "@/assets/enrolmentsys.png";
 
-import nodejs from "@/assets/nodejsbox.png";
-import reactnative from "@/assets/react-native.png";
-import mongodb from "@/assets/boxmongo.png";
-import javascript from "@/assets/javascript.png";
-import postman from "@/assets/postman.png";
-import Image from "next/image";
-
 type Props = {};
 
 export default function Projects({}: Props) {
@@ -43,7 +36,7 @@ export default function Projects({}: Props) {
         <Project
           projImage={taskmanagement.src}
           projName="SimplyTasks"
-          imageClass="xl:w-[600px] xl:h-[300px]  sm:w-42 sm:h-32"
+          imageClass="xl:w-[550px] xl:h-[300px]  sm:w-42 sm:h-32"
           socialLink={[
             {
               url: "https://main--verdant-khapse-68282c.netlify.app/",
