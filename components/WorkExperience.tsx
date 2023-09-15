@@ -21,14 +21,14 @@ export default function WorkExperience({}: Props) {
       transition={{ duration: 1.5 }}
       className="h-screen flex flex-col text-left max-w-7xl px-10 justify-start py-20 mx-auto items-center"
     >
-      <h3 className="uppercase tracking-[20px] text-gray-500 md:text-4xl sm:text-2xl">
+      <h3 className="uppercase tracking-[20px] text-gray-500 md:text-2xl sm:text-2xl">
         Experience
       </h3>
 
-      <div className="w-full flex space-x-5 overflow-x-scroll p-5 snap-x snap-mandatory scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#64CCC5]/90">
+      <div className="w-full flex space-x-5 overflow-x-scroll p-5 snap-x snap-mandatory xl:overflow-y-hidden  scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#64CCC5]/90">
         <ExperienceCard
           src={amazonIcon.src}
-          className="w-32 h-32  xl:w-[500px] xl:h-[200px] object-center"
+          className="w-32 h-32  xl:w-[200px] xl:h-[150px] object-center"
           companyTitle="Amazon Fulfillment Center"
           timing="October 2020 - May 2021"
           slogan="Work Hard. Have Fun. Make History."
@@ -41,7 +41,7 @@ export default function WorkExperience({}: Props) {
         />
         <ExperienceCard
           src={rsaf.src}
-          className="w-32 h-32  xl:w-[300px] xl:h-[300px] object-center"
+          className="w-32 h-32  xl:w-[200px] xl:h-[100px] object-center"
           companyTitle="Republic Singapore Air Force"
           timing="August 2018 - August 2020"
           slogan="Airforce, above all."
@@ -54,7 +54,7 @@ export default function WorkExperience({}: Props) {
         />
         <ExperienceCard
           src={stIcon.src}
-          className="w-32 h-32  xl:w-[500px] xl:h-[300px] object-center"
+          className="w-32 h-32  xl:w-[200px] xl:h-[100px] object-center"
           companyTitle="ST Electronics"
           timing="March 2017 - August 2017"
           slogan="Technology & innovation to solve real-world problems"

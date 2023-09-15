@@ -44,7 +44,7 @@ export const skillsData = [
     { src: tailwindIcon, title: "tail wind" },
     { src: cplusplusIcon, title: "c++" },
     { src: packageIcon, title: "npm" },
-    { src: nextjsIcon, title: "next js" },
+    { src: nextjsIcon, title: "next" },
     { src: mysqlIcon, title: "mysql" },
     { src: antdesignIcon, title: "ant design" },
     { src: muiIcon, title: "mui" },

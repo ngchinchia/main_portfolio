@@ -18,7 +18,7 @@ export default function Contact({}: Inputs) {
   };
   return (
     <div className="h-screen flex flex-col text-center max-w-7xl px-10 justify-evenly py-20 mx-auto items-center">
-      <h3 className="uppercase tracking-[20px] text-gray-500 md:text-4xl sm:text-2xl">
+      <h3 className="uppercase tracking-[20px] text-gray-500 md:text-2xl sm:text-2xl">
         contact
       </h3>
 

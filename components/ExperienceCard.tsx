@@ -22,7 +22,8 @@ type Props = {
 
 export default function ExperienceCard({src, className, companyTitle, timing, slogan, pt1, pt2, pt3, pt4, toolsLogo, toolsLogo2, toolsLogo3}: Props) {
   return (
-    <article className="flex flex-col rounded-lg items-start space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-start bg-[#292929] p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-auto">
+    <article className="flex flex-col rounded-lg items-start space-y-7 flex-shrink-0 w-full h-[1000px] snap-start bg-[#292929] p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-auto">
+      <div className="px-0 md:px-10 text-left">
       <motion.img
         initial={{
           y: -100,
@@ -36,7 +37,7 @@ export default function ExperienceCard({src, className, companyTitle, timing, sl
         alt="img"
       />
 
-      <div className="px-0 md:px-10 text-left">
+     
         <h4 className="md:text-4xl font-light sm:text-xl ">{companyTitle}</h4>
         <p className="font-bold md:text-2xl mt-1 sm:text-lg">{slogan}</p>
         <div className="flex space-x-2 my-2 justify-start">

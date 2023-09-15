@@ -35,11 +35,6 @@ export default function Home({}: Props) {
       <Link href="#hero">
         <footer className="sticky bottom-5 w-full cursor-pointer">
           <div className="flex items-center justify-center">
-            {/* <img
-              className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0"
-              src="https://imageio.forbes.com/specials-images/imageserve/64213c10fc7ed6f0a3eb47ae/The-Intersection-Of-AI-And-Human-Creativity--Can-Machines-Really-Be-Creative-/960x0.jpg?height=473&width=711&fit=bounds"
-              alt=""
-            /> */}
           </div>
         </footer>
       </Link>
