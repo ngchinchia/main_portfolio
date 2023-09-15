@@ -52,13 +52,15 @@ export default function Header({}: Props) {
 
         <SocialIcon
           url={"https://www.linkedin.com/in/ng-chin-chia-90699124b/"}
-          fgColor="gray"
+          fgColor="currentColor"
           bgColor="transparent"
+          className="messageIcon"
         />
         <SocialIcon
           url={"https://github.com/ngchinchia"}
-          fgColor="gray"
+          fgColor="currentColor"
           bgColor="transparent"
+          className="messageIcon"
         />
       </motion.div>
 

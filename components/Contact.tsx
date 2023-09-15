@@ -31,11 +31,11 @@ export default function Contact({}: Inputs) {
         <div className="space-y-10">
           <div className="flex items-center space-x-5 justify-center">
             <PhoneIcon className="text-[#64CCC5] h-7 w-7 animate-pulse" />
-            <p className="md:text-2xl sm:text-sm">+65 98390614</p>
+            <p className="md:text-2xl sm:text-sm">+65 89203108</p>
           </div>
           <div className="flex items-center space-x-5 justify-center">
             <MapPinIcon className="text-[#64CCC5] h-7 w-7 animate-pulse" />
-            <p className="md:text-2xl sm:text-sm">120513 West Coast Drive</p>
+            <p className="md:text-2xl sm:text-sm">122464 Clementi Ave 1</p>
           </div>
           <div className="flex items-center space-x-5 justify-center">
             <EnvelopeIcon className="text-[#64CCC5] h-7 w-7 animate-pulse" />

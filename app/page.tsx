@@ -1,5 +1,3 @@
-
-
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
@@ -9,16 +7,9 @@ import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Link from "next/link";
 
-
-
-type Props = {
- 
-};
-
+type Props = {};
 
 export default function Home({}: Props) {
-
-
   return (
     <div className=" bg-[#242424] h-screen text-white snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#64CCC5]/90">
       <Header />
@@ -55,4 +46,3 @@ export default function Home({}: Props) {
     </div>
   );
 }
-

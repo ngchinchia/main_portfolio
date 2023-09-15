@@ -1,8 +1,17 @@
 "use client";
 import React, { useEffect } from "react";
-import { motion } from "framer-motion";
+import Project from "./Project";
+
 import brewbubble2 from "@/assets/brewbubble2.png";
-import { SocialIcon } from "react-social-icons";
+import taskmanagement from "@/assets/taskmanagement.png";
+import enrolsys from "@/assets/enrolmentsys.png";
+
+import nodejs from "@/assets/nodejsbox.png";
+import reactnative from "@/assets/react-native.png";
+import mongodb from "@/assets/boxmongo.png";
+import javascript from "@/assets/javascript.png";
+import postman from "@/assets/postman.png";
+import Image from "next/image";
 
 type Props = {};
 
@@ -33,52 +42,63 @@ export default function Projects({}: Props) {
         className="w-full flex overflow-x-scroll scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#64CCC5]/90 md:overflow-y-scroll xl:overflow-y-hidden sm:overflow-y-scroll snap-x snap-mandatory "
         id="scrollContainer"
       >
-        <div className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center px-9 md:p-44 h-screen">
-          <motion.img
-            initial={{
-              y: -300,
-              opacity: 0,
-            }}
-            transition={{ duration: 1.2 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            src={brewbubble2.src}
-            alt=""
-            className="xl:w-[800px] xl:h-[400px] sm:w-42 sm:h-32"
-          />
-          <div className="space-y-10 px-0 md:px-10 max-w-6xl">
-            <h4 className="xl:text-4xl md:text-xl sm:text-sm font-semibold text-center whitespace-nowrap">
-              <span className="underline decoration-[#64CCC5]/50">
-                {" "}
-                Project {1} of : 5{" "}
-              </span>
-              Brew Bubble Mobile App
-            </h4>
-            <div className="flex items-center justify-center space-x-2">
-            <SocialIcon
-              url={
-                "https://www.youtube.com/watch?v=-4ooQDviA_o&ab_channel=MaeganLee"
-              }
-              fgColor="#64CCC5"
-              bgColor="gray"
-            />
-            <SocialIcon
-              url={
-                "https://docs.google.com/presentation/d/1g1Qc7K-KXy5C9iPBBAFIr41frdzCjfB55w5SCmwbToo/edit?usp=sharing"
-              }
-              fgColor="#64CCC5"
-              bgColor="gray"
-            />
-            </div>
-            <p className=" max-w-fit whitespace-break-spaces flex-wrap text-center xl:text-lg lg:text-sm md:text-sm sm:text-[10px] pb-10 overflow-hidden">
-            The app tackles issues such as limited access to comprehensive beer information, the difficulty of personalized tracking 
-            and reflection for users, 
-            and the cumbersome beer management processes for brewers. Furthermore, it bridges the social interaction gap by providing a platform for beer enthusiasts to connect and share their passion. With enhanced search and discovery features, users can easily find specific beers, venues, or breweries, improving their overall beer-app experience. 
-            This project showcases creative problem-solving 
-            and a commitment to enhancing user experiences in the beer enthusiast community.
-            </p>
-          </div>
-        </div>
+       
+        <Project
+          projImage={taskmanagement.src}
+          projName="SimplyTasks"
+          imageClass="xl:w-[600px] xl:h-[300px]  sm:w-42 sm:h-32"
+          socialLink={[
+            {
+              url: "https://main--verdant-khapse-68282c.netlify.app/",
+            },
+            {
+              url: "https://github.com/ngchinchia/taskmanager-frontend",
+            },
+            {
+              url: "https://github.com/ngchinchia/taskmanager-backend",
+            },
+          ]}
+          tech="Technologies : React, Typescript, mySQL, MUI, TanStackQuery"
+          projDesc="SimplyTask is a full-stack task management web application designed for individuals. It utilizes the TANstack (TypeScript, Apollo, Node.js) for the backend and React with TypeScript for the frontend, along with a MySQL database. Key features include asynchronous task creation and management, detailed task tracking, priority management, and data visualization. 
+          The project's goal is to provide an efficient and user-friendly task management solution for personal use."
+        />
+        <Project
+          projImage={brewbubble2.src}
+          imageClass="xl:w-[600px] xl:h-[300px] sm:w-42 sm:h-32"
+          projName="Brew Bubble Mobile App"
+          socialLink={[
+            {
+              url: "https://www.youtube.com/watch?v=-4ooQDviA_o&ab_channel=MaeganLee",
+            },
+            {
+              url: "https://docs.google.com/presentation/d/1g1Qc7K-KXy5C9iPBBAFIr41frdzCjfB55w5SCmwbToo/edit?usp=sharing",
+            },
+            {
+              url: "https://github.com/ngchinchia/brewbubble-backend",
+            },
+            {
+              url: "https://play.google.com/store/apps/details?id=com.BrewBubble&hl=en-SG",
+            },
+            {
+              url: "https://www.figma.com/file/gWSwmcOsxS950VLEQYwNAQ/FYP-Beer-App?type=design&node-id=0%3A1&mode=design&t=bfvzTEK8cMAo1XqO-1",
+            },
+          ]}
+          tech="Technologies : React, Node js, Mongodb, Express, Postman, Figma"
+          projDesc="Brew Bubble is a full stack mobile application that addresses several significant challenges within the beer enthusiast community, including the limited access to comprehensive beer information, the lack of personalized tracking and reflection tools, and the cumbersome beer management processes for brewers. It also fosters social interaction by offering a platform for beer enthusiasts to connect and share their passion. By incorporating advanced search and discovery features, users can effortlessly locate specific beers, venues, or breweries, thereby enhancing their overall beer-app experience. Key features include smart keg tracking of real time beer data and GPS tracking of nearby beer venues for particular beer. This project underscores a commitment to creative problem-solving and the continual improvement of user experiences."
+        />
+         <Project
+          projImage={enrolsys.src}
+          imageClass="xl:w-[300px] xl:h-[300px] sm:w-42 sm:h-32"
+          projName="OSE Management"
+          socialLink={[
+            {
+              url: "https://github.com/ngchinchia/SubjectEnrolmentSystem",
+            },
+          ]}
+          tech="Technologies : PHP, Html, Css, mySql, Apache "
+          projDesc="OSE Management is a full stack management project that streamlines subject enrollment processes, enhancing efficiency and usability for administrators, students, and educators alike. Its foundation in object-oriented programming and utilization of MYSQL and Apache underscores a commitment to delivering a feature-rich and user-friendly educational management solution. Key features include user authentication, robust search functionality and CRUD operations."
+         
+        />
       </div>
     </div>
   );

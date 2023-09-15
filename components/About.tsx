@@ -1,6 +1,7 @@
 'use client'
 import React from "react";
 import { motion } from "framer-motion";
+import ninja from "@/assets/ninja.png";
 
 type Props = {};
 
@@ -10,7 +11,7 @@ export default function About({}: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="flex flex-col text-center max-w-7xl px-10 justify-start py-20 mx-auto items-center  "
+      className="h-screen flex flex-col text-center max-w-7xl px-10 justify-start py-20 mx-auto items-center  "
     >
       <h3 className="uppercase tracking-[20px] text-gray-500 md:text-4xl sm:text-2xl">
         About
@@ -19,7 +20,7 @@ export default function About({}: Props) {
      
        <motion.img
         src={
-          "https://imageio.forbes.com/specials-images/imageserve/64213c10fc7ed6f0a3eb47ae/The-Intersection-Of-AI-And-Human-Creativity--Can-Machines-Really-Be-Creative-/960x0.jpg?height=473&width=711&fit=bounds"
+          ninja.src
         }
         initial={{
           x: -200,
@@ -30,24 +31,26 @@ export default function About({}: Props) {
         transition={{
           duration: 1.2,
         }}
-        className="lg:w-50 lg:h-50 md:w-30 md:h-30 object-cover mt-10"
+        className="rounded-full mt-10 w-[200px] h-[200px]"
       />
+      {/* lg:w-50 lg:h-50 md:w-30 md:h-30 sm:w-15 sm:h-15 */}
        
-      <div className="border space-y-10 px-0 md:px-10 items-center p-5 mt-10">
+      <div className="space-y-10 px-0 md:px-10 items-center p-5 mt-10">
         <h4 className="xl:text-4xl lg:text-3xl font-semibold whitespace-nowrap">
           Here is a{" "}
           <span className="underline decoration-[#64CCC5]/50"> little</span>{" "}
           background
         </h4>
-        <p className="w-fit px-4 text-left lg:text-2xl md:text-base sm:text-xs">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed
-          nibh a quam vestibulum imperdiet. Curabitur in fermentum sapien.
-          Nullam scelerisque semper erat at pharetra. Nulla ac lorem purus.
-          Praesent dignissim, sem in lobortis sagittis, velit lectus placerat
-          purus, congue feugiat dui tortor a mi. Proin ullamcorper tellus in
-          
+     
+        <ul className="list-disc space-y-4 w-fit px-4 text-left break-words lg:text-xl md:text-base sm:text-xs">
+          <li>Degree in Computer Science Cyber Security</li>
+          <li>Strong passion in building reusable components and designing captivating user interfaces</li>
+          <li>Create dynamic and efficient web solutions</li>
+          <li>Provide mobile-first development practices </li>
+          <li>Experienced in building full-stack applications with React and TypeScript for the frontend, complemented by expertise in Node.js for backend development. </li>
+          <li>Proficient in utilizing Postman to rigorously test backend APIs, ensuring seamless integration and robust functionality between frontend and backend components </li>
+        </ul>
       
-        </p>
       </div> 
    
     </motion.div>

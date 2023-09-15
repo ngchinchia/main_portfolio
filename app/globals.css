@@ -9,7 +9,11 @@
   }
 
   .messageIcon {
-    @apply bg-transparent text-gray-500 hover:text-[#64CCC5] cursor-pointer
+    @apply bg-transparent text-gray-500 hover:text-[#64CCC5] cursor-pointer 
+  }
+
+  .socialIcon {
+    @apply rounded-full 
   }
 
   .contactInput {
